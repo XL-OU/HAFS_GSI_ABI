@@ -432,7 +432,7 @@ contains
       real(r_kind),dimension(grd_ens%lat2,grd_ens%lon2),intent(out):: g_ps
       real(r_kind),dimension(grd_ens%lat2,grd_ens%lon2,grd_ens%nsig) ::g_tsen, g_q,g_prsl 
       real(r_kind),dimension(grd_ens%lat2,grd_ens%lon2,grd_ens%nsig+1) ::g_prsi 
-      real(r_kind),dimension(grd_ens%nlat,grd_ens%nlon,grd_ens%nsig),intent(out),optional::g_w,g_ql,g_qr,g_qi,g_qs,g_qg !Xu
+      real(r_kind),dimension(grd_ens%lat2,grd_ens%lon2,grd_ens%nsig),intent(out),optional::g_w,g_ql,g_qr,g_qi,g_qs,g_qg !Xu
       logical, intent(in)         :: use_fv3_cloud !Xu
 
   !
